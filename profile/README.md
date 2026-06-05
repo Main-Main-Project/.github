@@ -258,7 +258,8 @@ DB 구조는 ERD 다이어그램으로 관리합니다.
 
 ### ERD 이미지 삽입 위치
 
-![ERD Diagram](<img width="2270" height="1692" alt="main-project" src="https://github.com/user-attachments/assets/be06cc78-d60e-415c-ae76-4f445ae98499" />)
+<img width="2270" height="1692" alt="main-project" src="https://github.com/user-attachments/assets/267f45cf-9e81-407a-9c5e-40ee0f965834" />
+
 
 ERD에는 다음과 같은 주요 테이블이 포함될 예정입니다.
 
