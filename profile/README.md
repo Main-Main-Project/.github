@@ -257,20 +257,18 @@ DB 구조는 ERD 다이어그램으로 관리합니다.
 
 ### ERD 이미지 삽입 위치
 
-> 아래 위치에 ERD 다이어그램 이미지를 삽입합니다.
-
-![ERD Diagram](./docs/images/erd-diagram.png)
+![ERD Diagram](<img width="2270" height="1692" alt="main-project" src="https://github.com/user-attachments/assets/be06cc78-d60e-415c-ae76-4f445ae98499" />)
 
 ERD에는 다음과 같은 주요 테이블이 포함될 예정입니다.
 
 * users
-* files
-* file_logs
+* logger
 * chat_sessions
-* chat_histories
-* rag_logs
+* messages
+* message_sources
+* documents
 * document_chunks
-* deleted_files
+* document_status_events
 
 ---
 
@@ -446,23 +444,7 @@ file.user_id == current_user.id
 
 ## 16. 프로젝트 문서 관리 계획
 
-추후 Document Repository를 생성하여 다음과 같이 문서를 관리합니다.
-
-```text
-Document/
-├── README.md
-├── api/
-│   └── api-spec.md
-├── db/
-│   ├── erd-diagram.png
-│   └── db-schema.md
-├── flow/
-│   └── service-flow.md
-├── deploy/
-│   └── docker-deploy.md
-└── troubleshooting/
-    └── issue-log.md
-```
+추후 Document Repository를 생성하여 문서를 관리할 예정입니다.
 
 ---
 
