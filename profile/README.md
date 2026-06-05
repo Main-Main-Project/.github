@@ -31,12 +31,17 @@
 
 현재 프로젝트는 프론트엔드와 백엔드를 분리하여 관리합니다.
 
-```text
-Main-Project/
-├── [Front-end](https://github.com/Main-Main-Project/Front-end)/        # 프론트엔드 Repository
-├── [Back-end](https://github.com/Main-Main-Project/Back-end)/         # 백엔드 Repository
-├── [Docker](https://github.com/Main-Main-Project/Docker))/         # Docker Repository
-└── Document/         # 프로젝트 문서 Repository 예정
+| Repository | Description | Status |
+| --- | --- | --- |
+| [project-sub](https://github.com/project-sub/project-sub) | 사용자 화면 및 파일 업로드 UI / FastAPI 기반 API 서버 | 완료
+| [document](https://github.com/project-sub/document) | 프로젝트 발표 자료 pdf 및 시연 영상 | 완료 |
+
+| Repository | Description | Status |
+| --- | --- | --- |
+| [Front-end](https://github.com/Main-Main-Project/Front-end) | 사용자 화면 UI | 완료
+| [Back-end](https://github.com/Main-Main-Project/Back-end)/ | FastAPI 기반 API 서버 | 완료
+| [Docker](https://github.com/Main-Main-Project/Docker) | Docker 배포 | 완료
+| Document | 프로젝트 발표 자료 pdf 및 시연 영상 | 완료 |
 ```
 
 ### Front-end Repository
