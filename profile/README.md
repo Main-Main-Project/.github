@@ -484,3 +484,10 @@ file.user_id == current_user.id
 * 포트폴리오 확장 가능한 설계
 
 이를 통해 팀 프로젝트 설명, API 설계, DB 설계, 함수 명세서, 배포 문서, 포트폴리오 정리까지 자연스럽게 연결할 수 있습니다.
+
+## 19. 시연 영상
+
+
+https://github.com/user-attachments/assets/f045995d-525f-46f3-a255-4b601339754c
+
+
