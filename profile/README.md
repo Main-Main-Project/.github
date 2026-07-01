@@ -29,8 +29,8 @@ https://github.com/user-attachments/assets/f045995d-525f-46f3-a255-4b601339754c
 * RAG 기반 답변 생성
 * 답변 출처 표시
 * 대화 이력 및 로그 저장
-* Docker 기반 프론트엔드/백엔드 분리 운영
-* 향후 문서 전용 Repository 구성
+* Cloudflare Tunnel와 Pages로 배포
+* 향후 Docker 기반 AWS 배포
 
 ---
 
@@ -167,13 +167,12 @@ Ollama 또는 Colab LLM
 3. 파일 확장자 및 용량 검사
 4. SHA-256 해시 생성
 5. PostgreSQL에서 user_id + file_hash 기준 중복 체크
-6. 중복 파일이면 업로드 차단
-7. 파일 상태 UPLOADED 생성
-8. 텍스트 추출
-9. 법률 관련 문서 여부 판별
-10. 법률 문서가 아니면 REJECTED 처리
-11. 법률 문서이면 백그라운드 작업 등록
-12. 사용자에게 "처리 중" 응답 반환
+6. 파일 상태 UPLOADED 생성
+7. 텍스트 추출
+8. 법률 관련 문서 여부 판별
+9. 법률 문서가 아니면 Error 로그 저장 후 REJECTED 처리
+10. 법률 문서이면 백그라운드 작업 등
+11. 사용자에게 "처리 중" 응답 반환
 ```
 
 백그라운드에서는 다음 작업을 수행합니다.
@@ -201,7 +200,7 @@ Ollama 또는 Colab LLM
 2. JWT 인증
 3. session_id 확인
 4. 질문 임베딩
-5. 공용 Pinecone 검색
+5. 공용 RDB 청킹 데이터셋 검색
 6. 개인 Pinecone 검색
 7. 검색 결과 병합
 8. 유사도 임계값 판별
@@ -265,7 +264,7 @@ DB 구조는 ERD 다이어그램으로 관리합니다.
 
 ### ERD 이미지 삽입 위치
 
-<img width="2270" height="1692" alt="ERD" src="https://github.com/user-attachments/assets/0a06ae7b-2ba7-4c1c-ad0b-122b614fb5f1" />
+<img width="2270" height="1672" alt="main-project (4)" src="https://github.com/user-attachments/assets/742e5097-19a6-4846-812d-e2aaff1f04c8" />
 
 
 
@@ -319,8 +318,15 @@ API 명세서는 Notion에서 관리합니다.
 
 * 회원가입
 * 로그인
+* 로그아웃
+* 회원탈퇴
 * JWT 토큰 검증
 * 사용자 정보 조회
+
+### Oauth
+* 카카오 로그인
+* 카카오 로그아웃
+* 카카오 unlink
 
 ### Documents
 
