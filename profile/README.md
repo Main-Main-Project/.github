@@ -43,7 +43,7 @@ https://github.com/user-attachments/assets/f045995d-525f-46f3-a255-4b601339754c
 | [Front-end](https://github.com/Main-Main-Project/Front-end) | 사용자 화면 UI | 완료
 | [Back-end](https://github.com/Main-Main-Project/Back-end) | FastAPI 기반 API 서버 | 완료
 | [Docker](https://github.com/Main-Main-Project/Docker) | Docker 배포 | 완료
-| Document | 프로젝트 발표 자료 pdf 및 시연 영상 | 완료 |
+| [Document](https://github.com/Legal-Chat-Bot/Document) | 프로젝트 발표 자료 pdf 및 시연 영상 | 완료 |
 ```
 
 ### Front-end Repository
